@@ -1,0 +1,229 @@
+* DADOS, INFORMAÇÃO E CONHECIMENTO:
+	O DADO é um fato, um valor documementado ou um resultado de medição. Quando um sentido semâtico ou um significado é atribuído aos dados, gera-se INFORMAÇÃO. Quando estes significados se tornam familiares, ou seja,
+	quando um agente os aprende, este se torna consciente e capaz de tomar decisões a partir deles, e surge o CONHECIMENTO.
+
+* TIPOS DE DADOS:
+	=> DADOS ESTRUTURADOS:
+		Tipicamente, uma base de dados usada em sistemas informatizados convencionais é organizada de forma que se tenham dados armazenados em estruturas tabulares, em que as linhas armazenam uma ocorrência de um evento
+                caracterizado por um conjunto de colunas que representam características que descrevem um exemplar daquele evento.
+
+		Ex:
+			* Um sistema bancário que armazena informações sobre clientes, sobre suas respectivas contas bancárias e sobre as transações executadas sobre tais contas.
+
+			* O Trabalho de funcionários de um departamento de recursos humanos de uma empresa que observam o comportamento de candidatos a uma vaga de emprego, fazendo anotações sobre suas atitudes durante
+			  a realização de atividades de um processo de seleção.
+
+			* Uma empresa que deseja lançar um produto novo e, para isso, realiza pesquisas sobre sua aceitação com um conjunto específico de pessoas que represento o público-alvo.
+
+			* Uma corrida de Fórmula 1 na qual se medem os tempos que cada piloto gasta para chegar em trechos de um circuito.
+
+	=> DADOS NÃO ESTRUTURADOS:
+		Muitos dos dados disponíveis para análise e extração de informação e conhecimento estão apresentados de forma não estruturada, a exemploes de textos, imagens, vídeos e sons.
+
+
+* CONVENÇÕES:
+	"Cojuntos de dados (do inglês dataset)";
+	"Bases de conhecimento";
+	"instâncias -> linhas da base de dados -> formalmente chamado de Xi"
+	"atributos -> colunas da base de dados -> formalmente chamdado de Xji"
+	"Os atributos Xij, que representam os exemplares de um conjunto de dados, são chamados DESCRITIVOS"
+	"No entando há um segundo tipo de atributo denominado RÓTULO -> formalmente denominado de {Xi, Yi}"
+
+
+* DESCOBERTA DE CONHECIMENTO EM BASES DE DADOS E A MINERAÇÃO DE DADOS:
+	Encontrar o que era desconhecido, o que estava escondido. Associado a um processo analítico, sistemático e, até onde possível, automatizado.
+	De Forma simplificada, a mineração de dados pode ser definida como um processo automático ou semiautomático de explorar analiticamente grandes bases de dados, com a finalidade de descobrir padrões relevantes que
+	sejam importantes para a assimilação de informação importante, suportando a geração de conhecimento.
+	Faz uso de conceitos provenientes de Inteligência Artificial, Aprendizado de Máquina, Estatística e Banco de Dados.
+
+
+* VISÃO GERAL DO PROCESSO DE DESCOBERTA DE CONHECIMENTO
+	Este processo denomina-se, para efeitos de simplificação, "processo de KDD (Knowledge Discovery in Databases).
+	O processo KDD inicia com a organização das bases de dados que contêm os dados da área de interesse, a partir dos quais se deseja descobrir algum tipo de conhecimento útil. Esses dados passam por uma série de procedimentos
+	de pré-processamento que inclui, mas não se limita a:
+	
+		* Organização em um repositório único;
+		* Tratamento para eliminação de instâncias repetidas e ou valores discrepantes;
+		* Procedimentos de seleção de dados que permitem que se escolha apenas os exemplares e/ou os atributos relevantes para a mineração de dados;
+		* normalizações para que os valores dos atributos estejam em um mesma escala e sejam considerados com a mesma relevância pelos algoritmos de análise;
+
+	Com os dados pré-processados, inicia-se a tarefa de mineração de dados propriamente dita, envolvendo a resolução de tarefas como predição, agrupamento ou associação. Por fim os resultados obtidos são avaliados, validados e
+	formatados em gŕaficos, tabelas e relatórios estruturados.
+
+	Esse processo pode ser iterativo ou interativo:
+
+		=> Obtenção de dados;
+ 		=> Pré-processamento;
+		=> Mineração de dados;
+		=> Pós-processamento;
+
+	Esse processo pode ser feito na sua ordem usual ou fora dela, a depender do conjunto de dados e/ou das decisões tomadas pelo analista.
+
+
+* MINERAÇÃO DE DADOS
+	Mineração de dados é definida em termos de esforços para descoberta de padrões em bases de dados. A partir dos padrões descobertos, têm-se condições de gerar conhecimento útil para um processo de tomada de decisão. Trata-se,
+	portanto, da aplicação de técnicas, implementadas por meio de algoritmos computacionais, capazes de receber, como entrada, um conjunto de fatos ocorridos no mundo real e devolver, como saída, um padrão de comportamento, o qual
+	pode ser expresso, por exemplo, como uma regra de associação, uma função de mapeamento ou a modelagem de um perfil.
+
+	A depender do tipo de dado à disposição e do tipo de conhecimento demandado, a mineração de dados oferece diferentes soluções e possibilidades. Assim, a área de mineração de dados é comumente dividida em tarefas, as quais ajudam
+	a entender como situar um problema real junto aos diferentes algoritmos de análise de dados disponíveis e também  que tipo de padrão, e consequentemente, que tipo de conhecimento é possível descobrir.
+
+
+* TAREFAS DE MINERAÇÃO DE DADOS
+	Na literatura especializada são encontradas diferentes taxonomias para caracterizar as tarefas de minerção de dados.
+	Comumente divididas em dois níveis:
+	
+	NÍVEL 1:
+		-> PREDITIVAS
+		
+		Tarefas preditivas usam os valores dos atributos descritivos para predizer valores futuros ou desconhecidos de outros atributos de interesse.
+		
+
+		-> DESCRITIVAS
+
+		Tarefas descritivas têm o objetivo de encontrar padrões que descrevem os dados de maneira que o ser humano possa interpretar.
+
+	NÍVEL 2:
+		No nível dois, as tarefas preditivas e decritivas são especializadas.
+
+		-> PREDITIVAS
+
+		Classificação e regressão.
+
+		
+		-> DESCRITIVAS
+
+		Agrupamento, sumarização, modelagem de dependências e detecção de desvios.
+	
+
+		
+* INTELIGÊNCIA DE NEGÓCIOS E TOMADA DE DECISÃO ESTRATÁGICA
+	Relacionados com o contexto de mineração de dados e o processo de descoberta de conhecimento em bases de dados estão os conceitos relacionados com a inteligência de negócios, e referentes à tomadas de decisão.
+
+		* Um termo gurda-chuva, que inclui aplicações, infraestrutura e ferramentas e as melhoras práticas que capacitam o acesso e a análise da informação, com o intuito de melhorar e otimizar decisões de desempenho.
+	
+		=> OLTP x OLAP
+			No contexto dos sistemas computacionais em uma organização, principalmente as que pretendem adotar processos voltados para a área de Inteligência de Negócios, é importante que se tenha uma visão clara e 
+			diferenciada sobre duas classes importantes de sistemas: OLTP E OLAP.
+
+		* OLTP:
+			"Online Transaction Processing", trata-se de uma classe de sistemas amplamente presente em todos os tipos de organizações que possuem processos de negócios automatizados. Sistemas pertencentes a essa classe
+			suportam registro e controle de todas as transações rotineiras que dão condições ao funcionamento de uma organização.
+
+			Exemplos:
+				Gerenciamento de recursos humanos;
+				Contabilidade;
+				Controle de chão de fábrica;
+				Operações bancárias;
+				Controle de cartões de créditos;
+				Gerenciamento de passagens aéreas;
+
+			São sistemas que operam sobre bases de dados transacionais, comumente gerenciadas por sistemas gerenciadores de banco de dados relacionais.
+
+		* OLAP:
+			"Online Analytical Processing", trata-se de uma classe de sistemas menos presentes nas organizações, mas com taxa de uso em franca expansão. Sistemas pertencentes a essa classe suportam o armazenamento, 
+			gerenciamento e análise de dados históricos, geralmente derivados de diferentes fontes de dados, incluindo os sistemas OLTP. São para gestores que precisam de informações resumidas e de alto nível sobre
+			os negócios de uma organização.
+
+		Ambas as classes de sistemas são importantes para as organizações, porém, devem receber tratamento adequado quando usadas como fonte de dados ou fonte de conhecimento no processo que suporta uma tomada de decisão
+		estratégica.
+
+
+* CONCEITOS DE ESTATISTICA DESCRITIVA
+	A estat�stica descritiva pode ser entendida como uma ferramenta capaz de descrever ou resumirdado, mostrando aspectos importantes do conjunto de dados, como o tipo de distribuicao associada e os valores mais representativos 
+	do conjunto, e permitindo criar visualizacoes referentes a tais aspectos.
+
+
+	* Populacao, amostra e variaveis:
+		-> Populacao:
+			Ou universo éo nome que se dáa um conjunto de unidades que compartilham caracteristicas comuns e sobre qual e pretendido o desenvolvimento de um estudo.
+
+
+		-> Amostra:
+			Subconjunto da populcao que deve ser estabelecido com cuidado, seguindotecnicas apropriadas, pois o objetivo de obter uma amostra é reduzir o tamanho da populacao sem que caracteristicas essencias associadas
+			a ela sejam perdidas. Boas tecnicas de amostragem geram amostras representativas e imparciais da populacao, ou seja, mantem a proporcionalidade dos fenomenos que ocorrem na populacao e conferem chances iguais
+			aos elementos da populacao de fazerem parte da amostra.
+
+
+		-> variaveis:
+			Uma variavel diz respeito a uma caracteristica associada a elementos de uma populoacao. Por exemplo, num restaurante, uma variavel pode ser a temperatura em qu um vinho deve ser servido ou o tipo de um prato
+			presente no cardapio.
+			As variaveis no contexto da estatistica descritiva podem ser quantitativas ou qualitativas.
+
+			* Quatitativas:
+				Ou variaveis numericas, sao aquelas que podem ser medidas em uma escala de valores numericos, e se dividem em discretas ou continuas.
+				Ex:
+					discretas -> quantidade de bebidas vendidas, idade do cliente.
+					continuas -> preco de um item do cardapio, peso de um corte de carne.
+
+
+			* Qualitativas:
+				Ou categoricas, sao aquelas que representam uma classificacao do elemento ao qual o valor da variavel esta associado, e se dividem em nominais ou ordinais.
+				Ex:
+					nominais -> codigo da forma de pagamento, forma de pagamento.
+					ordinais -> mes de observacao, faixa etaria dos clientes.
+
+
+	* Medidas de posicao e separatrizes:
+		Medidas de posicao, ou medidas de tendencia central, permitem encontrar os valores que orientam a analise dos dados no que diz respeito a sua localizacao, ou como a distribuicao associada aos valores se comporta no
+		universo amostrado. As medidas de posicao mais comuns no contexto de analise exploratoria de dados sao media aritmetica, mediana e moda. Relacionadas com a mediana estao as medidas separatrizes percentis e quartis.
+
+		MEDIA:
+			Para um conjunto de valores v = {v1,v2,v3,v4,...,vn}, em que n � a quantidade de valores do conjunto, a media aritmetica simples e a soma dos valoes do conjunto v, dividida peloa quantidade de valores presentes
+			nesse cojunto. 
+
+		MEDIANA:
+			Valor que divide a distribuicao dos valores exatamente ao meio. Importante lembrar que tal valor nao precisa estar presente no conjunto v. Para o calculo da mediana, todos os valores presentes no conjunto devem
+			ser ordenados de forma crescente.
+
+
+		MODA:
+		    	E o valor mais frequente em um conjunto de valores. Ela e a unica medida de posicao que pode assumir mais de um valor. Essa situacao ocorre quando dois ou mais valores aparecem no conjunto de valores com a mesma			    frequencia, a maxima no conjunto. Assim, um conjunto de valores pode ser amodal (nao possui moda), unimodal (possui uma moda), bimodal (possui duas modas) ou multimodal (possui diversas modas).
+
+
+		A comparação da média, mediana e moda pode revelar informações interessantes sobre a distribuição dos valores do conjunto em questão. Quando essas medidas assumem o mesmo valor (ou valores com variaçõequenas entre si) significa que o conjunto de valores de uma variável tem simetria, ou seja, é possível usar uma dessas medidas de posição para separar o conjunto de valores em duas partes com a mesma distribuição uencia
+
+
+		Os percentis e quartis sao medidas separatrizes que dividem o conjunto de valores, ordenado de forma crescente, em partes tao iguais quanto o possivel. O percentil de ordem p determina os p% menores valores contidos em
+		v'. Isso significa que os p% valores em v' estao abaixo do valor da posicao i.
+
+		Casos particulares dos percentis definem os quartis:
+
+			-> Q1 = p = 25;
+			-> Q2 = p = 50;
+			-> Q3 = p = 75;
+			-> Q4 = p = 100;
+
+
+* MEDIDAS DE DISPERSAO:
+	As medidas de posicao sao uteis para apresentar uma sumarizacao dos dados. No entanto, nao sao capazes de descrever a variacao ou dispersao do conjunto de valores. Para esse fim, aplicam-se as medidas de dispesao,
+	capazes de descrever o quanto os valores de um conjunto estao proximos ou distantes de uma medida central, como a media. As medidas mais comuns de dispersao ou variancia dos dados sao a AMPLITUDE, VARIANCIA, DESVIO-PADRAO E
+	COEFICIENTE DE VARIACAO.
+
+	* Amplitude:
+		 Para um conjunto de valores v, a medida da amplitude e a diferenca entre o maior e o menor valor do conjunto, portanto:
+
+			 -> amplitude(v) = max(v) - min(v).
+		
+		 Embora a medida da amplitude seja simples, sua interpretacao precisa ser feita com cuidado, pois ela pode ser influenciada por valores extremos, conhecidos como outliers.
+
+
+	* Variancia:
+		A variancia e uma medida de dispersao definida como e media dos quadrados das diferencas entre cada valor do conjunto v e a media desse conjunto.
+
+			->  x�(v) = 1 / n + ([v', ...] - media(v))�
+
+
+	* Desvio-padrao:
+		O desvio-padrao é a raiz quadrada da variancia. O uso do desvio-padrao so faz sentido quando  media for usada como medida de posicao (ou centro).
+		O resultado dessa medida geralmente e usado para verificar a consistencia de um fenomeno ( um fenomeno e consistente quando o calculo do desvio-padrao resulta em alores baixos.
+		Outra utilidade para o desvio-padrao e conhecida como regra empirica, ou regra 68-95-99 ou ainda regra dos 3-sigmas. Essa regra se aplica a conjunto de valores com distribuicao normal e afirma que aproximademente
+		68% dos valores desse conjunto estao a menos de um desvio-padrao da sua media; 95% dos valores desse conjuntoestao a menos de dois desvios-padrao da sua media; 99.97% dos valores desse conjunto estao a menos de tres
+		desvios-padrao da sua media.
+
+	
+	* Coficiente de dispersao:
+		E capaz de expressar a dispersao relativa dos valores e e util para comparar a dispersao de dois ou mais conjuntos de valores. O coeficiente de dispersao, tambem conhecido como coeficiente de variacao de Pearson,
+		e dado por:
+		
+			-> cv(v) = a(v)/media(v)
