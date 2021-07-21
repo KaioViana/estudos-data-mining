@@ -227,3 +227,37 @@
 		e dado por:
 		
 			-> cv(v) = a(v)/media(v)
+
+
+	
+	EXEMPLO DE CALCULO DA VARIANCIA E DO DESVIO PADRAO EM PYTHON:
+		!#bin/python3
+		
+		# VARIAVEIS
+		valores = [25, 25, 29, 30, 32, 65, 65, 65, 90] # conjunto de valores
+		media_valores = 0 # media do conjunto
+		diff_valores_media = [] # diferenca entre cada valor do conjunto e a media desse conjunto
+		quadrado_diff_valores_media = [] # quadrado da diferenca entre cada valor do conjunto e a media desse conjunto
+
+		# RESULTADOS A SEREM ALCANCADOS
+		variancia = 0
+		desivio_padrao = 0
+
+		# CALCULOS
+		for valor in valores:
+		    media_valores += valor
+
+		media_valores = media_valores/len(valores) # media do conjunto igual a 47.33
+
+		for valor in valores:
+		    diff_valores_media.append(valor-media_valores) # diferenca entre cada valor do conjunto e a media desse conjunto igual a: [-22.33, -22.33, -18.33, -17.33, -15.33, 17.66, 17.66, 17.66, 42.66]
+
+		for valor in diff_valores_media:
+		    quadrado_diif_valores_media.append(valor**2) # quadrado da diferenca igual a: [498.77, 498.77, 336.11, 300.144, 235.11, 312.11, 312.11, 312.11, 1820.44]
+
+		for valor in quadrado_diff_valores_media:
+		    variacia += valor
+
+		variancia = variancia/len(quadrado_diff_valores_media) # variancia igual a: 4626
+
+		desvio_padrao = variancia ** 0.5 # desvio padrao igual a raiz quadrada da variancia: 22.67
