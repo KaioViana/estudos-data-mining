@@ -261,3 +261,11 @@
 		variancia = variancia/len(quadrado_diff_valores_media) # variancia igual a: 4626
 
 		desvio_padrao = variancia ** 0.5 # desvio padrao igual a raiz quadrada da variancia: 22.67
+
+
+	* Distribuicao de frequencia:
+		Dados podem ser organizados de maneira a serem resumidos e visualizados por meio de graficos ou tabelas. Uma organizacao possivel e pela distribuicao de frequencia, que pode ser obtida distribuindo um
+		conjunto de valores em faixas (intervalos ou bins) e fornecendo o numero (ou porcentagem) de valores do conjunto que aparece em cada faixa (ou intervalo). Assim, os valores de um conjunto sao resumidos
+		de maneira ALTERNATIVA ao uso de medidas que resultam em valores unicos (como media, desvio-padrao etc), permitindo a construcao de uma visualizacao compacta desse conjunto.
+		A distribuicao dos dados pela frequencia pode ser feita de modo RELATIVO ou ACUMULADO. A frequencia relativa e a apresentacao da frequencia de valores que aparecem em cada uma das faixas, dividida pela
+		pela frequencia total de valores de um conjunto e, geralmente, e expressa em porcentagem.
