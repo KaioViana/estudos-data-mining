@@ -269,3 +269,12 @@
 		de maneira ALTERNATIVA ao uso de medidas que resultam em valores unicos (como media, desvio-padrao etc), permitindo a construcao de uma visualizacao compacta desse conjunto.
 		A distribuicao dos dados pela frequencia pode ser feita de modo RELATIVO ou ACUMULADO. A frequencia relativa e a apresentacao da frequencia de valores que aparecem em cada uma das faixas, dividida pela
 		pela frequencia total de valores de um conjunto e, geralmente, e expressa em porcentagem.
+
+		
+
+	* Analise de correlacao:
+		As medidas de posicao e de dispersao se constituem como ferramentas de analise exploratoria de um unico conjunto de calores. A analise de correlacao, por outro lado, permite estudar a relacao entre dois
+		conjuntos de valores. Nesse tipo de analise, quantifica-se o quanto um conjunto de valores (ou uma variavel) esta relacionado com o outro, no sentido de determinar a intensidade e a direcao dessa relacao.
+
+		O resultado do coeficiente de correlacao assimira valores entre -1 e +1. O sinal do resultado indica a direcao, se a correlacao e positiva ou negativa, e o valor indica a intensidade da correlacao. Valores
+		de correlacao acima de |0,70| indicam forte correlacao, sendo que |.| indica a operacao de modulo.
