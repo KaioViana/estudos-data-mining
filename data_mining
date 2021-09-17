@@ -278,3 +278,52 @@
 
 		O resultado do coeficiente de correlacao assimira valores entre -1 e +1. O sinal do resultado indica a direcao, se a correlacao e positiva ou negativa, e o valor indica a intensidade da correlacao. Valores
 		de correlacao acima de |0,70| indicam forte correlacao, sendo que |.| indica a operacao de modulo.
+
+
+		* Calculo da correlacao entre dois conjuntos em python:
+
+			# VARIAVEIS
+			v1 = [24, 27, 29, 30, 32, 58, 64, 64, 65]
+			v2 = [10, 25, 20, 36, 28, 38, 50, 60, 69]
+
+			v1_media = []
+			v2_media = []
+			v1_v2_media_produto = []
+
+			v1_media_elevado = []
+			v2_media_elevado = []
+			v1_media_elevado_raiz = 0
+			v2_media_elevado_raiz = 0
+			v1_v2_media_elevado_raiz_produto = 0
+
+
+			# CALCULANDO (v1 - media(v1))
+			for value in v1:
+    			var = value - round(sum(v1)/len(v1), 2)
+     		 	v1_media.append(var)
+
+
+			# CALCULANDO (v2 - media(v2))
+            for value in v1:                 
+                var = value - round(sum(v2)/len(v2), 2)
+                v2_media.append(var)
+
+
+			# CALCULANDO O PRODUTO ENTRE AS MEDIAS DE CADA VALOR SO CONJUNTO (v1_media * v2_media)
+            for value_v1, value_v2 in zip(v1_media, v2_media):                 
+				v1_v2_media_produto.append(value_v1*value_v2)
+
+			
+			# CALCULANDO MEDIAS DOS CONJUNTOS ELEVADO AO QUADRADO ((v1 - media(v1))^2, (v2 - media(v2))^2)
+			for value_v1, value_v2 in zip(v1_media, v2_media):
+                v1_media_elevado.append(value_v1**2)
+				v2_media_elevado.append(value_v2**2)
+
+
+			# RAIZ DAS MEDIAS ELEVADAS
+			v1_media_elevado_raiz = sum(v1_media_elevado)**0.5
+			v2_media_elevado_raiz = sum(v2_media_elevado)**0.5
+
+
+			# CORRELACAO
+			round(sum(v1_v2_media_produto))/(v1_media_elevado_raiz*v2_media_elevado_raiz) # 0.89 -> altamente correlacionando
