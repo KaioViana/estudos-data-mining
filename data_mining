@@ -45,35 +45,35 @@
 		* OrganizaÃ§Ã£o em um repositÃ³rio Ãºnico;
 		* Tratamento para eliminaÃ§Ã£o de instÃ¢ncias repetidas e ou valores discrepantes;
 		* Procedimentos de seleÃ§Ã£o de dados que permitem que se escolha apenas os exemplares e/ou os atributos relevantes para a mineraÃ§Ã£o de dados;
-		* normalizaÃ§Ãµes para que os valores dos atributos estejam em um mesma escala e sejam considerados com a mesma relevÃ¢ncia pelos algoritmos de anÃ¡lise;
+		* normalizações para que os valores dos atributos estejam em um mesma escala e sejam considerados com a mesma relevância pelos algoritmos de análise;
 
-	Com os dados prÃ©-processados, inicia-se a tarefa de mineraÃ§Ã£o de dados propriamente dita, envolvendo a resoluÃ§Ã£o de tarefas como prediÃ§Ã£o, agrupamento ou associaÃ§Ã£o. Por fim os resultados obtidos sÃ£o avaliados, validados e
-	formatados em gÅ•aficos, tabelas e relatÃ³rios estruturados.
+	Com os dados pré-processados, inicia-se a tarefa de mineração de dados propriamente dita, envolvendo a resolução de tarefas como predição, agrupamento ou associação. Por fim os resultados obtidos são avaliados, validados e
+	formatados em g¿aficos, tabelas e relatórios estruturados.
 
 	Esse processo pode ser iterativo ou interativo:
 
-		=> ObtenÃ§Ã£o de dados;
- 		=> PrÃ©-processamento;
-		=> MineraÃ§Ã£o de dados;
-		=> PÃ³s-processamento;
+		=> Obtenção de dados;
+ 		=> Pré-processamento;
+		=> Mineração de dados;
+		=> Pós-processamento;
 
-	Esse processo pode ser feito na sua ordem usual ou fora dela, a depender do conjunto de dados e/ou das decisÃµes tomadas pelo analista.
-
-
-* MINERAÃ‡ÃƒO DE DADOS
-	MineraÃ§Ã£o de dados Ã© definida em termos de esforÃ§os para descoberta de padrÃµes em bases de dados. A partir dos padrÃµes descobertos, tÃªm-se condiÃ§Ãµes de gerar conhecimento Ãºtil para um processo de tomada de decisÃ£o. Trata-se,
-	portanto, da aplicaÃ§Ã£o de tÃ©cnicas, implementadas por meio de algoritmos computacionais, capazes de receber, como entrada, um conjunto de fatos ocorridos no mundo real e devolver, como saÃ­da, um padrÃ£o de comportamento, o qual
-	pode ser expresso, por exemplo, como uma regra de associaÃ§Ã£o, uma funÃ§Ã£o de mapeamento ou a modelagem de um perfil.
-
-	A depender do tipo de dado Ã  disposiÃ§Ã£o e do tipo de conhecimento demandado, a mineraÃ§Ã£o de dados oferece diferentes soluÃ§Ãµes e possibilidades. Assim, a Ã¡rea de mineraÃ§Ã£o de dados Ã© comumente dividida em tarefas, as quais ajudam
-	a entender como situar um problema real junto aos diferentes algoritmos de anÃ¡lise de dados disponÃ­veis e tambÃ©m  que tipo de padrÃ£o, e consequentemente, que tipo de conhecimento Ã© possÃ­vel descobrir.
+	Esse processo pode ser feito na sua ordem usual ou fora dela, a depender do conjunto de dados e/ou das decisões tomadas pelo analista.
 
 
-* TAREFAS DE MINERAÃ‡ÃƒO DE DADOS
-	Na literatura especializada sÃ£o encontradas diferentes taxonomias para caracterizar as tarefas de minerÃ§Ã£o de dados.
-	Comumente divididas em dois nÃ­veis:
+* MINERAÇÃO DE DADOS
+	Mineração de dados é definida em termos de esforços para descoberta de padrões em bases de dados. A partir dos padrões descobertos, têm-se condições de gerar conhecimento útil para um processo de tomada de decisão. Trata-se,
+	portanto, da aplicação de técnicas, implementadas por meio de algoritmos computacionais, capazes de receber, como entrada, um conjunto de fatos ocorridos no mundo real e devolver, como saída, um padrão de comportamento, o qual
+	pode ser expresso, por exemplo, como uma regra de associação, uma função de mapeamento ou a modelagem de um perfil.
+
+	A depender do tipo de dado à disposição e do tipo de conhecimento demandado, a mineração de dados oferece diferentes soluções e possibilidades. Assim, a área de mineração de dados é comumente dividida em tarefas, as quais ajudam
+	a entender como situar um problema real junto aos diferentes algoritmos de análise de dados disponíveis e também  que tipo de padrão, e consequentemente, que tipo de conhecimento é possível descobrir.
+
+
+* TAREFAS DE MINERAÇÃO DE DADOS
+	Na literatura especializada são encontradas diferentes taxonomias para caracterizar as tarefas de minerção de dados.
+	Comumente divididas em dois níveis:
 	
-	NÃVEL 1:
+	NÍVEL 1:
 		-> PREDITIVAS
 		
 		Tarefas preditivas usam os valores dos atributos descritivos para predizer valores futuros ou desconhecidos de outros atributos de interesse.
@@ -81,29 +81,29 @@
 
 		-> DESCRITIVAS
 
-		Tarefas descritivas tÃªm o objetivo de encontrar padrÃµes que descrevem os dados de maneira que o ser humano possa interpretar.
+		Tarefas descritivas têm o objetivo de encontrar padrões que descrevem os dados de maneira que o ser humano possa interpretar.
 
-	NÃVEL 2:
-		No nÃ­vel dois, as tarefas preditivas e decritivas sÃ£o especializadas.
+	NÍVEL 2:
+		No nível dois, as tarefas preditivas e decritivas são especializadas.
 
 		-> PREDITIVAS
 
-		ClassificaÃ§Ã£o e regressÃ£o.
+		Classificação e regressão.
 
 		
 		-> DESCRITIVAS
 
-		Agrupamento, sumarizaÃ§Ã£o, modelagem de dependÃªncias e detecÃ§Ã£o de desvios.
+		Agrupamento, sumarização, modelagem de dependências e detecção de desvios.
 	
 
 		
-* INTELIGÃŠNCIA DE NEGÃ“CIOS E TOMADA DE DECISÃƒO ESTRATÃGICA
-	Relacionados com o contexto de mineraÃ§Ã£o de dados e o processo de descoberta de conhecimento em bases de dados estÃ£o os conceitos relacionados com a inteligÃªncia de negÃ³cios, e referentes Ã  tomadas de decisÃ£o.
+* INTELIGÊNCIA DE NEGÓCIOS E TOMADA DE DECISÃO ESTRATÁGICA
+	Relacionados com o contexto de mineração de dados e o processo de descoberta de conhecimento em bases de dados estão os conceitos relacionados com a inteligência de negócios, e referentes à tomadas de decisão.
 
-		* Um termo gurda-chuva, que inclui aplicaÃ§Ãµes, infraestrutura e ferramentas e as melhoras prÃ¡ticas que capacitam o acesso e a anÃ¡lise da informaÃ§Ã£o, com o intuito de melhorar e otimizar decisÃµes de desempenho.
+		* Um termo gurda-chuva, que inclui aplicações, infraestrutura e ferramentas e as melhoras práticas que capacitam o acesso e a análise da informação, com o intuito de melhorar e otimizar decisões de desempenho.
 	
 		=> OLTP x OLAP
-			No contexto dos sistemas computacionais em uma organizaÃ§Ã£o, principalmente as que pretendem adotar processos voltados para a Ã¡rea de InteligÃªncia de NegÃ³cios, Ã© importante que se tenha uma visÃ£o clara e 
+			No contexto dos sistemas computacionais em uma organização, principalmente as que pretendem adotar processos voltados para a área de Inteligência de Negócios, é importante que se tenha uma visão clara e 
 			diferenciada sobre duas classes importantes de sistemas: OLTP E OLAP.
 
 		* OLTP:
@@ -304,12 +304,12 @@
 
 
 			# CALCULANDO (v2 - media(v2))
-            for value in v1:                 
+            for value in v2:                 
                 var = value - round(sum(v2)/len(v2), 2)
                 v2_media.append(var)
 
 
-			# CALCULANDO O PRODUTO ENTRE AS MEDIAS DE CADA VALOR SO CONJUNTO (v1_media * v2_media)
+			# CALCULANDO O PRODUTO ENTRE AS MEDIAS DE CADA VALOR DO CONJUNTO (v1_media * v2_media)
             for value_v1, value_v2 in zip(v1_media, v2_media):                 
 				v1_v2_media_produto.append(value_v1*value_v2)
 
@@ -327,3 +327,24 @@
 
 			# CORRELACAO
 			round(sum(v1_v2_media_produto))/(v1_media_elevado_raiz*v2_media_elevado_raiz) # 0.89 -> altamente correlacionando
+
+
+
+* REPRESENTAÇÕES GRÁFICAS
+	Representações gráficas auxiliam na visualização  das caracteristicas dos dados, oque é útil para os analistas, seja em relação a uma primeira ação de estudo dos dados ou à necessidade de comparação de resultados
+	obtidos com a resolução das tarefas de mineração de dados.
+	
+	Diagrama de caixa ou Boxplot é uma maneira popular de visualizar a distribuição dos dados. Incorpora o resumo dos cinco números, obtidos a partir da combinação dos quartis com valores de mínimo e máximo de um conjunto
+	de valores.
+	
+	Adicionalmente aos resultados e análises supracitadas, o uso da caixa ainda permite inferir conclusões sobre a forma da distribuição dos dados. É possível comcluir se o conjunto de dados está mais concentrado ou mais
+	disperso, em que região se encontra a maioria dos dados e como eles se dispersam. tipos de distribuição: assimétrica negativa ou à esquerda, simétrica e assimétrica positiva ou à direita.
+
+	Histograma é uma representação gráfica da distrivuição de frequências. Um histograma é construído alocando as faixas no eixo horizontal, e as frequências (avsolutas ou relativas, acumuladas ou não), no eixo verical.
+	Para cada faixa, é atribuída uma varra, de forma que sua altura represente sua frequência. Gráficos desse tipo são capazes de indicar o tipo de cuva criada pela distribuição das frequências.
+
+	A quantidade de faixas, segundo Triola (2008), implica o tipo de informação que pode ser extraída do histograma. Segundo o mesmo autor, geralmente a quantidade satisfatória é entre 5 e 20 faixas, mas, na prática, trabalha-se
+	com um número aproximadamente igual à raiz quadrada do tamanho do conjunto de valores ou com o número de faixas apropriado já conhecido a priori.
+
+	As informações sobre frequências podem ainda ser apresentadas como um gráfico de setores ou pelo diagrama de Pareto. O gráfico de setores (ou gráfico de pizza) apresenta uma visualização diferente da disposição dos valores de
+	frequência; porém, essa visualização  não permite observar informação referente a curvas de frequência.		
